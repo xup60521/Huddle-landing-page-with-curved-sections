@@ -9,12 +9,116 @@
     <link rel="stylesheet" href="./src/style.css">
 </head>
 
-<body>
-    <main
-        class="w-full min-h-screen bg-gradient-to-r from-fuchsia-500 to-cyan-500 flex items-center justify-center">
-        <h1 class="font-mono font-bold text-3xl text-white drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)]">
-            Vite + Typescript + TailwindCSS + GitHub Pages
-        </h1>
+<body class="bg-white font-open_sans">
+    <main class="w-full min-h-screen flex flex-col items-center">
+        <!-- md:px-[5vw] -->
+        <nav class="w-full md:px-[5vw] md:py-12 flex items-center justify-between">
+            <img src="/images/logo.svg" alt="logo">
+            <button class="text-c_Pink transition hover:text-c_Light_Pink hover:border-c_Light_Pink text-sm border-[1px] rounded-full px-6 py-1 border-c_Pink">Try it Free</button>
+        </nav>
+        <!-- md:px-[15vw] -->
+        <div class="w-full md:px-[15vw] flex flex-col  py-24 items-center">
+            <h1 class="font-poppins text-black font-bold md:text-[2.5rem]">Build The Community Your Fans Will Love</h1>
+            <p class="md:max-w-[30rem] text-center pt-6 pb-8">
+                Huddle re-imagines the way we build communities. You have a voice, but so does
+                your audience. Create connections with your users as you engage in genuine discussion.
+            </p>
+            <button class="bg-c_Pink rounded-full font-medium px-20 py-4 text-white transition hover:bg-c_Light_Pink">Get Started For Free</button>
+            <img src="/images/screen-mockups.svg" alt="mockups" class="w-full mt-24">
+        </div>
+        <div class="w-full md:px-[5vw] flex md:flex-row gap-[30vw] flex-col justify-center items-center">
+            <div class="flex flex-col">
+                <img src="/images/icon-communities.svg" alt="communities icon" class="size-6">
+                <div class="flex flex-col items-center">
+                    <span class="text-[5rem] font-poppins font-semibold">1.4k+</span>
+                    <span class="text-black text-xl opacity-50">Communities Formed</span>
+                </div>
+            </div>
+            <div class="flex flex-col">
+                <img src="/images/icon-messages.svg" alt="messages icon" class="size-6">
+                <div class="flex flex-col items-center">
+                    <span class="text-[5rem] font-poppins font-semibold">2.7m+</span>
+                    <span class="text-black text-xl opacity-50">Messages Sent</span>
+                </div>
+            </div>
+        </div>
+        <img src="/images/bg-section-top-desktop-1.svg" alt="" class="md:block hidden w-full mt-36">
+        <img src="/images/bg-section-top-mobile-1.svg" alt="" class="md:hidden w-full mt-36">
+        <!-- md:px-[10vw] -->
+        <div class="w-full md:px-[10vw] py-16 bg-c_Very_Pale_Blue md:grid grid-cols-2 flex flex-col items-center">
+            <div class="flex flex-col gap-6">
+                <h2 class="font-poppins text-[2.5rem] font-bold">Grow Together</h2>
+                <p class="md:max-w-[31rem]">
+                    Generate meaningful discussions with your audience and build a strong, loyal community.
+                    Think of the insightful conversations you miss out on with a feedback form.
+                </p>
+            </div>
+            <img src="/images/illustration-grow-together.svg" alt="illustration-grow-together.svg" class="w-full ml-12">
+        </div>
+        <img src="/images/bg-section-bottom-desktop-1.svg" alt="" class="md:block hidden w-full">
+        <img src="/images/bg-section-bottom-mobile-1.svg" alt="" class="md:hidden w-full">
+        <div class="w-full md:px-[10vw] pt-52 pb-24 md:grid grid-cols-2 flex flex-col items-center">
+            <img src="/images/illustration-flowing-conversation.svg" alt="illustration-flowing-conversation.svg"
+                class="w-full">
+            <div class="flex flex-col gap-6 ml-24">
+                <h2 class="font-poppins text-[2.5rem] font-bold">Flowing Conversations</h2>
+                <p class="md:max-w-[33rem]">
+                    You wouldn't paginate a conversation in real life, so why do it online? Our threads have
+                    just-in-time loading for a more natural flow.
+                </p>
+            </div>
+        </div>
+        <img src="/images/bg-section-top-desktop-2.svg" alt="" class="md:block hidden w-full mt-36">
+        <img src="/images/bg-section-top-mobile-2.svg" alt="" class="md:hidden w-full mt-36">
+        <div class="w-full md:px-[10vw] py-16 bg-c_Very_Pale_Blue md:grid grid-cols-2 flex flex-col items-center">
+            <div class="flex flex-col gap-6">
+                <h2 class="font-poppins text-[2.5rem] font-bold">Your Users</h2>
+                <p class="md:max-w-[31rem]">
+                    It takes no time at all to integrate Huddle with your app's authentication solution. This means,
+                    once signed in to your app, your users can start chatting immediately.
+                </p>
+            </div>
+            <img src="/images/illustration-your-users.svg" alt="illustration-your-users.svg" class="w-full ml-12">
+        </div>
+        <img src="/images/bg-section-bottom-desktop-2.svg" alt="" class="md:block hidden w-full">
+        <img src="/images/bg-section-bottom-mobile-2.svg" alt="" class="md:hidden w-full">
+        <div class="w-full md:px-[5vw] flex flex-col items-center py-32 bg-white gap-8">
+            <h2 class="text-[2rem] font-bold font-poppins">Ready To Build Your Community?</h2>
+            <button class="bg-c_Pink rounded-full font-medium px-20 py-4 text-white transition hover:bg-c_Light_Pink">Get Started For Free</button>
+        </div>
+        <img src="/images/bg-footer-top-desktop.svg" alt="" class="md:block hidden w-full">
+        <img src="/images/bg-footer-top-mobile.svg" alt="" class="md:hidden w-full">
+        <footer
+            class="w-full text-sm text-white bg-c_Very_Dark_Cyan md:px-[10vw] md:grid grid-cols-2 pt-12 pb-24 flex flex-col">
+            <div class="flex flex-col">
+                <div>
+                    <img src="/images/logo.svg" alt="logo" class="brightness-0 invert h-8 aspect-auto">
+                </div>
+                <p class="md:max-w-[20rem] py-4">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris nulla quam, hendrerit lacinia
+                    vestibulum a, ultrices quis sem.
+                </p>
+                <div class="flex items-center gap-3 py-2">
+                    <img src="/images/icon-phone.svg" alt="icon-phone.svg">
+                    <span>Phone: +1-543-123-4567</span>
+                </div>
+                <div class="flex items-center gap-3 py-2">
+                    <img src="/images/icon-email.svg" alt="icon-email.svg">
+                    <span>Phone: +1-543-123-4567</span>
+                </div>
+            </div>
+            <div class="flex flex-col">
+                <span class="uppercase font-poppins text-xl tracking-wider font-bold">newsletter</span>
+                <p class="md:max-w-[21rem] pt-4 pb-8">
+                    To recieve tips on how to grow your community, sign up to our weekly newsletter. We’ll never
+                    send you spam or pass on your email address
+                </p>
+                <div class="md:w-[80%] flex gap-8">
+                    <input type="text" class="border-[1px] text-black outline-none border-white text-sm bg-white rounded-md px-4 flex-grow py-3" />
+                    <button class="bg-c_Pink text-white transition hover:bg-c_Light_Pink px-8 rounded-md font-semibold">Subscribe</button>
+                </div>
+            </div>
+        </footer>
     </main>
     <script type="module" src="/src/main.ts"></script>
 </body>
